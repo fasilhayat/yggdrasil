@@ -61,25 +61,6 @@ services:
     networks:
       - civitas
 
-  civitas-api:
-    image: civitas-api
-    container_name: api
-    build:
-      context: .
-      dockerfile: Civitas.Api/Dockerfile
-    ports:
-      - "7080:7080"
-      - "7081:7081"
-    environment:
-      - ASPNETCORE_URLS=https://+:7081;http://+:7080
-      - Kestrel__Certificates__Default__Password=yourpassword
-      - Kestrel__Certificates__Default__Path=/https/yourcert.pfx
-      - ASPNETCORE_ENVIRONMENT=Development
-      - API_KEY=yourapikey
-      - Redis__ConnectionString=civitas-cache:6379
-    networks:
-      - civitas
-
 networks:
   civitas:
     external: true
