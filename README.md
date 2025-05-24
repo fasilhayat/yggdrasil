@@ -87,7 +87,7 @@ scrape_configs:
 Start the services:
 
 ```bash
-docker-compose up -d
+make run-local
 ```
 
 Verify running containers:
