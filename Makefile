@@ -3,7 +3,7 @@ run-local:
 	docker-compose up -d
 
 # Stop all services
-down:
+remove:
 	docker-compose down
 
 # Restart all services
