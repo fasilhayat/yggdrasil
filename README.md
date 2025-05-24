@@ -23,10 +23,6 @@ This guide explains how to integrate **Prometheus** and **Grafana** with the **C
 ├── docker-compose.yml
 ├── prometheus
 │   └── prometheus.yml
-├── certs/
-├── conf/
-│   └── nginx/
-├── logs/
 └── README.md
 ```
 
